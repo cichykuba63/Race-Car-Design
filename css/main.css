@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 62.5%;
+  background-color: #eec0c6;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav {
+  position: relative;
+  height: 70px;
+  background-color: #333;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  background-image: url("../jpg/bullet-2157465_640.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-arrow {
+  position: absolute;
+  right: 70px;
+  width: 40px;
+  height: inherit;
+  font-size: 3rem;
+  color: pink;
+  text-shadow: 0 0 5px rgb(236, 160, 172);
+}
+.nav-arrow span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.burger-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 10px;
+  font-size: 2.5rem;
+  color: pink;
+  text-shadow: 0 0 5px rgb(236, 160, 172);
+  transition: color 0.5s, text-shadow 0.5s;
+}
+
+.burger-icon:hover {
+  color: lightblue;
+  text-shadow: 0 0 5px rgb(119, 119, 241);
+}
+
+.nav-items {
+  display: none;
+}
+
+.header {
+  position: relative;
+  height: 200px;
+  background-image: url("../jpg/bmw-tiny.jpg");
+  background-position: center;
+  background-size: cover;
+  scroll-margin-top: 100px;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  text-align: center;
+}
+.header-text .header-text-title {
+  font-size: 1.8rem;
+  color: #ccc;
+  text-transform: capitalize;
+}
+.header-text span {
+  text-transform: uppercase;
+  color: pink;
+  text-shadow: 0 0 5px pink;
+}
+.header-text .header-text-desc {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.header-shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+main {
+  margin: 10px auto;
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+.section {
+  margin: 30px auto;
+}
+.section .section-title {
+  margin: 20px auto;
+  font-size: 1.7rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.first-section-info {
+  margin: 20px auto 40px;
+  padding: 0 30px;
+  font-size: 1.2rem;
+  text-align: justify;
+  color: #333;
+}
+
+.cars {
+  height: 100%;
+  width: 100%;
+}
+
+.car {
+  position: relative;
+  margin: 20px auto;
+  height: 230px;
+  width: 90%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.car-info {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  color: #fff;
+}
+
+.car-title {
+  margin: 3px 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: pink;
+}
+
+.car-text {
+  margin: 0 auto;
+  width: inherit;
+  font-size: 0.8rem;
+}
+
+.car-title,
+.car-text {
+  text-align: center;
+}
+
+.car-shadow {
+  position: absolute;
+  top: 67%;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.first-car {
+  background-image: url("../jpg/first-car-tiny.jpg");
+}
+
+.second-car {
+  background-image: url("../jpg/second-car-tiny.jpg");
+}
+
+.third-car {
+  background-image: url("../jpg/third-car-tiny.jpg");
+}
+
+.fourth-car {
+  background-image: url("../jpg/fourth-car-tiny.jpg");
+}
+
+.contact-one {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.contact-one i {
+  font-size: 1.4rem;
+}
+
+.contact {
+  padding: 2px 0;
+}
+
+.contact-info-one,
+.contact-info-four,
+.contact-info-five {
+  font-weight: bold;
+}
+
+.contact-info-four {
+  padding-top: 20px;
+}
+
+.footer {
+  height: 50px;
+  font-size: 1.2rem;
+  color: #eec0c6;
+  line-height: 50px;
+  text-align: center;
+  background-color: #333;
+}
+.footer i {
+  padding: 0 1px;
+  transition: color 0.3s;
+}
+.footer i:hover {
+  color: rgb(119, 119, 241);
+}
+
+@media (min-width: 768px) {
+  .nav {
+    height: 100px;
+  }
+  .logo {
+    height: 70px;
+    width: 70px;
+  }
+  .nav-arrow {
+    width: 60px;
+    font-size: 4rem;
+  }
+  .burger-icon {
+    font-size: 3rem;
+  }
+  .header-text {
+    width: 400px;
+  }
+  .header-text .header-text-title {
+    font-size: 3rem;
+  }
+  .header-text .header-text-desc {
+    font-size: 1.6rem;
+  }
+  .section .section-title {
+    font-size: 2.5rem;
+  }
+  .first-section-info {
+    font-size: 1.8rem;
+  }
+  .car {
+    height: 350px;
+  }
+  .car-title {
+    font-size: 1.8rem;
+  }
+  .car-text {
+    font-size: 1.3rem;
+  }
+  .contact-one {
+    font-size: 1.7rem;
+  }
+  .contact-one i {
+    font-size: 1.7rem;
+  }
+  .footer {
+    height: 80px;
+    line-height: 80px;
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 992px) {
+  .logo,
+  .nav-arrow,
+  .burger-icon {
+    display: none;
+  }
+  .nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: inherit;
+  }
+  .nav-items a {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #eec0c6;
+    text-shadow: 0 0 5px rgb(236, 160, 172);
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  .nav-items a:hover {
+    color: #ccc;
+    text-shadow: 0 0 5px rgb(119, 119, 241);
+  }
+  .header {
+    height: 400px;
+    background-image: url("../jpg/bmw-big.jpg");
+  }
+  .header-text {
+    width: 600px;
+  }
+  .header-text .header-text-title {
+    font-size: 4rem;
+  }
+  .header-text .header-text-desc {
+    font-size: 2rem;
+  }
+  .car {
+    height: 500px;
+  }
+  .car:hover {
+    border: 4px solid rgb(119, 119, 241);
+  }
+  .car-title {
+    font-size: 2.2rem;
+  }
+  .car-text {
+    font-size: 1.7rem;
+  }
+  .first-car {
+    background-image: url("../jpg/first-car-big.jpg");
+  }
+  .second-car {
+    background-image: url("../jpg/second-car-big.jpg");
+  }
+  .third-car {
+    background-image: url("../jpg/third-car-big.jpg");
+  }
+  .fourth-car {
+    background-image: url("../jpg/fourth-car-big.jpg");
+  }
+  .footer i {
+    padding: 0 5px;
+    cursor: pointer;
+  }
+}
+@media (min-width: 1200px) {
+  .cars {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .car {
+    width: 46%;
+  }
+  .car-title {
+    font-size: 1.7rem;
+  }
+  .car-text {
+    font-size: 1.4rem;
+  }
+}/*# sourceMappingURL=main.css.map */
